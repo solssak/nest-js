@@ -3,7 +3,8 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { DatabaseModule } from './database/database.module';
-import { ProudctModule } from './proudct/proudct.module';
+import { ProductModule } from './product/product.module';
+
 import * as Joi from '@hapi/joi';
 
 @Module({
@@ -20,7 +21,7 @@ import * as Joi from '@hapi/joi';
       }),
     }),
     DatabaseModule,
-    ProudctModule,
+    ProductModule,
   ],
   controllers: [AppController],
   providers: [AppService],
